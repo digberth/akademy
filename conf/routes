@@ -1,0 +1,24 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+GET     /login                      controllers.Application.login()
+GET     /cursos                     controllers.Application.cursos()
+GET     /seguridad                  controllers.Application.seguridad()
+GET     /role                       controllers.Application.role()
+GET     /users                      controllers.Application.users()
+GET     /calendarioacademico        controllers.Application.calendarioAcademico()
+GET     /calendarioadministrativo   controllers.Application.calendarioAdministrativo()
+GET     /encuesta                      controllers.Application.encuesta()
+GET     /examenes                      controllers.Application.examenes()
+GET     /indicadores                      controllers.Application.indicadores()
+GET     /modulobase                      controllers.Application.moduloBase()
+GET     /recursos                      controllers.Application.recursos()
+GET     /reportes                      controllers.Application.reportes()
+GET     /seguimiento                      controllers.Application.seguimiento()
+GET     /valoracion                      controllers.Application.valoracion()
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

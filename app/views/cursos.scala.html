@@ -1,0 +1,213 @@
+@(message: String,user:models.User)
+@template("Cursos", user,"course-icon"){
+	<div class="row">
+
+		<div class="col-md-4">
+		  <div class="form-group">
+		    <label for="nombreCurso" >Nombre curso</label>
+		    <input type="text" class="form-control" id="nombreCurso" placeholder="Nombre curso" />
+		  </div>
+		</div>
+		
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="duracion" >Duracion</label>
+			    <input type="text" class="form-control" id="duracion" placeholder="Duracion" />
+			  </div>
+		  </div>
+		 
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="costo" >Costo del curso</label>
+			    <input type="text" class="form-control" id="costo" placeholder="Costo del curso" />
+			  </div>
+		  </div>
+		  
+		
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+		  
+		  <div class="form-group">
+		    <label for="tipocurso" >Tipo de curso</label>
+	      	<select class="form-control" id="tipocurso">
+	           	<option value="Tecnico" >Tecnico</option>
+	            <option value="no tecnico" >no tecnico</option>
+	            <option value="ventas" >ventas</option>
+	            <option value="Evento especial" >Evento especial</option>
+	        </select>
+		  </div>
+		 </div>
+		 
+		 <div class="col-md-3">
+		  <div class="form-group">
+		    <label for="marca" >Marca</label>
+	      	<select class="form-control" id="marca">
+	            <option value="SEAT" >SEAT</option>
+	            <option value="AUDI" >AUDI</option>
+	            <option value="VOLKSWAGEN" >VOLKSWAGEN</option>
+	        </select>
+		  </div>
+		</div>
+		<div class="col-md-3">
+		  <div class="form-group">
+		    <label for="claveCurso" >Clave del curso</label>
+	    	<select class="form-control" id="claveCurso">
+		      	<option value="Ene213" >Ene213</option>
+	            <option value="Ene443" >Ene443</option>
+	            <option value="FEB369" >FEB369</option>
+	        </select>
+		  </div>
+		  
+		</div>
+		
+		  <div class="col-md-3">
+			  <div class="form-group">
+			    <label for="puesto" >Puesto al que va destinado</label>
+			    <select class="form-control" id="puesto">
+		            <option value="TECNICO" >TECNICO</option>
+		            <option value="no tecnico" >MECANICO</option>
+		            <option value="ventas" >GERENTE DE SERVICIO</option>
+		            <option value="Evento especial" >ASESOR DE SERVICIO</option>
+		            <option value="Evento especial" >GERENTE DE SERVICIO</option>
+		        </select>
+			  </div>
+		  </div>
+	</div>
+	
+	<div class="row">
+	
+		<div class="col-md-4">
+			  <div class="form-group">
+			    <label for="cursos2" >Cursos</label>
+			    <select class="form-control"  id="cursos2">
+		            <option value="Curso 1" >Curso 1</option>
+		            <option value="Curso 2" >Curso 2</option>
+		        </select>
+			  </div>
+		  </div>
+		  
+		<div class="col-md-4 col-md-offset-2">
+			  <div class="form-group">
+			    <label for="vestimenta" >Codigo de vestimenta</label>
+			    <select class="form-control" id="vestimenta">
+		            <option value="Casual" >Casual</option>
+		            <option value="Formal" >Formal</option>
+		            <option value="Otro" >Otro</option>
+		        </select>
+			  </div>
+		  </div>
+	</div>
+	
+	<div class="row">
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="requiere" >Requiere inscripcion?</label>
+			    <div class="row">
+			    <div class="col-xs-3">
+			    <select class="form-control input-sm" id="requiere">
+		            <option value="Si" >Si</option>
+		            <option value="No" >No</option>
+		        </select>
+		        </div>
+		        </div>
+			  </div>
+		  </div>
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="aplica" >Aplica lista participantes definida?</label>
+			    <div class="row">
+			    <div class="col-xs-3">
+			    <select class="form-control input-sm" id="aplica">
+		            <option value="Si" >Si</option>
+		            <option value="No" >No</option>
+		        </select>
+		        </div>
+		        </div>
+			  </div>
+		  </div>
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="aprobacion" >Aprobacion cursos previos?</label>
+			    <div class="row">
+			    <div class="col-xs-3">
+			    <select class="form-control input-sm" id="aprobacion">
+		            <option value="Si" >Si</option>
+		            <option value="No" >No</option>
+		        </select>
+		        </div>
+		        </div>
+			  </div>
+		  </div>
+		 
+		  
+	</div>
+	
+	<div class="row">
+		 
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="material" >Material de autoestudio</label>
+			    <div class="row">
+			    <div class="col-xs-3">
+			    <select class="form-control input-sm" id="material">
+		            <option value="Si" >Si</option>
+		            <option value="No" >No</option>
+		        </select>
+		        </div>
+		        </div>
+			  </div>
+		  </div>
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="online" >Examen previo en linea?</label>
+			    <div class="row">
+			    <div class="col-xs-3">
+			    <select class="form-control input-sm" id="online">
+		            <option value="Si" >Si</option>
+		            <option value="No" >No</option>
+		        </select>
+		        </div>
+		        </div>
+			  </div>
+		  </div>
+		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="show" >Aplica no show?</label>
+			    <div class="row">
+			    <div class="col-xs-3">
+			    <select class="form-control input-sm" id="show">
+		            <option value="Si" >Si</option>
+		            <option value="No" >No</option>
+		        </select>
+		        </div>
+		        </div>
+			  </div>
+		  </div>
+	</div>
+	
+	<div class="row">
+		 <div class="col-md-6">
+			  <div class="form-group">
+			    <label for="comentarios" >Comentarios generales</label>
+			    <textarea class="form-control" rows="3" id="comentarios"></textarea>
+			  </div>
+		  </div>
+	</div>
+	<div class="row">
+		  <div class="col-md-6">
+			  <div class="form-group">
+			    <label for="requerimientos" >Requerimientos adicionales</label>
+			    <textarea class="form-control" rows="3" id="requerimientos"></textarea>
+			  </div>
+		  </div>
+	</div>
+	
+	<div class="row">
+		  <div class="col-md-4">
+			  <button type="submit" class="btn btn-primary">Guardar</button>
+		  </div>
+	</div>
+
+}

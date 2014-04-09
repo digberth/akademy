@@ -1,0 +1,53 @@
+@(title: String, user:models.User)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>VW Academy: @title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap-datetimepicker.min.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    </head>
+    <body>
+    <div class="igov-h-b">
+    		<div class="l"><img width="155px" height="64px" src="@routes.Assets.at("images/logo.png")" /></div>
+		    <div class="sb"></div>
+		    <div class="h-n">VW Academy</div>
+		    <div class="h-ln">Volkswagen de Mexico</div>
+		    @if(user!=null) {<div class="hu-n" style="cursor: pointer;" >@user.firstName</div>}
+		     @if(user!=null) {<div class="hu-ln" style="cursor: pointer;" >@user.lastName</div>}
+		    <div class="tt">@title</div>
+		    <div class="hu-i">
+		    	 @if(user!=null) {<img style="cursor: pointer;" width="32px" height="32px" src="@routes.Assets.at("images/user.png")" />}
+		    </div>
+	</div>
+	<div class="igov-wa">
+		@content
+	</div>
+	
+	<div class="igov-mc">
+
+	</div>
+		
+		<div id="preferencesarea" class="preferences-area"></div>
+		
+		<div id="viewarea" class="view-area">
+		    <div id="viewarea-header" class="area-header" ></div>
+		    <div id="viewarea-content" class="area-content"></div>
+		    <div id="viewarea-menu" class="area-menu"></div>
+		</div>
+		
+		<div id="infoarea" class="view-area" style='z-index:12;'>
+		    <div id="infoarea-header" class="area-header"></div>
+		    <div id="infoarea-content" class="area-content"></div>
+		    <div id="infoarea-menu" class="area-menu"></div>
+		</div>
+		        
+        
+    </body>
+    <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.at("javascripts/bootstrap-datetimepicker.min.js")" type="text/javascript"></script>
+</html>

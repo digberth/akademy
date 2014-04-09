@@ -1,0 +1,63 @@
+@(title: String, user:models.User,icon_active: String)(content: Html)
+@main(title, user){
+	<div class="row">
+		  <div class="col-md-1">
+		  	<div class="list-group list-menu-academy">
+		  		  <a href="@routes.Application.index()" class="list-group-item">
+				  		<span class="tool-icon home-icon"> </span>
+				  </a>
+			  	  <a href="@routes.Application.cursos()" class="list-group-item">
+			  		<span class="tool-icon course-icon"></span> 
+				  </a>
+				   <a href="@routes.Application.calendarioAdministrativo()" class="list-group-item">
+				  		<span class="tool-icon cal-admin-icon"> </span>
+				  </a>
+				  <a href="@routes.Application.seguridad()" class="list-group-item">
+				  		<span class="tool-icon seguridad-icon"> </span>
+				  </a>
+				   <a href="@routes.Application.role()" class="list-group-item">
+				  		<span class="tool-icon role-icon"> </span>
+				  </a>
+				  <a href="@routes.Application.users()" class="list-group-item">
+				  		<span class="tool-icon users-icon"> </span>
+				  </a>
+				  <a href="@routes.Application.calendarioAcademico()" class="list-group-item">
+				  		<span class="tool-icon cal-academic-icon"> </span>
+				  </a>
+				 
+				  <a href="@routes.Application.encuesta()" class="list-group-item">
+				  		<span class="tool-icon encuesta-icon"> </span>
+				  </a>
+				  <a href="@routes.Application.examenes()" class="list-group-item">
+				  		<span class="tool-icon examenes-icon"> </span>
+				  </a>
+				  <a href="@routes.Application.indicadores()" class="list-group-item">
+				  		<span class="tool-icon indicadores-icon"> </span>
+				  </a>
+				  <a href="@routes.Application.moduloBase()" class="list-group-item">
+				  		<span class="tool-icon modulo-base-icon"> </span>
+				  </a>
+				  <a href="@routes.Application.recursos()" class="list-group-item">
+				  		<span class="tool-icon recursos-icon"> </span>
+				  </a>
+				  <a href="@routes.Application.reportes()" class="list-group-item">
+				  		<span class="tool-icon reportes-icon"> </span>
+				  </a>
+				  <a href="@routes.Application.seguimiento()" class="list-group-item">
+				  		<span class="tool-icon seguimiento-icon"> </span>
+				  </a>
+				  <a href="@routes.Application.valoracion()" class="list-group-item">
+				  		<span class="tool-icon valoracion-icon"> </span>
+				  </a>
+			</div>
+		  </div>
+		  <script type="text/javascript">
+		  	  window.onload = function() {
+		  		$(".@icon_active").parent().addClass('active');
+			  }
+		  </script>
+		  <div class="col-md-10">
+		  		@content
+		  </div>
+   </div> 
+}

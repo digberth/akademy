@@ -1,0 +1,491 @@
+.igov-h-b {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow:  0px 0px 2px 1px rgba(220, 220, 220, 1);
+    min-height: 70px;
+    max-height: 70px;
+    background-color: white;
+    z-index: 14;
+}
+.igov-h-b .l {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    min-height: 70px;
+    max-height: 70px;
+    min-width: 222px;
+    max-width: 222px;
+}
+.igov-h-b .sb {
+    position: fixed;
+    top: 2px;
+    left: 225px;
+    right: 166px;
+    min-height: 66px;
+    max-height: 66px;
+    width:1px;
+    border-right:1px solid #cacaca;
+    box-shadow: rgba(255,255,255,0.8) 1px 0px 0px;
+}
+.igov-h-b .tt {
+    position: fixed;
+    top: 44px;
+    text-align: center;
+    font-size: 18px;
+    height: 22px;
+    left: 225px;
+    right: 170px;
+    float: left;
+}
+.igov-hh {
+    position: fixed;
+    top: 40px;
+    right: 0px;
+    width: 100px;
+    min-height: 30px;
+    max-height: 30px;
+    z-index: 16;
+}
+.igov-hh .cta {
+    position: fixed;
+    top: 40px;
+    right: 2px;
+    text-align: center;
+    font-size: 11px;
+}
+.igov-hh .ctb {
+    position: fixed;
+    top: 54px;
+    right: 2px;
+    text-align: center;
+    font-size: 11px;
+}
+.igov-h-b .h-n {
+    position: fixed;
+    top:20px;
+    left:230px;
+    font-weight: 300;
+    font-size: 12pt;
+    min-height: 25px;
+    max-height: 25px;
+    min-width: 400px;
+}
+.igov-h-b .h-ln {
+    position: fixed;
+    top: 3px;
+    left: 230px;
+    min-height: 30px;
+    min-width: 400px;
+}
+.igov-h-b .hu-n {
+    position: fixed;
+    top: 2px;
+    right: 35px;
+    min-height: 30px;
+    font-size: 9pt;
+}
+.igov-h-b .hu-ln {
+    position: fixed;
+    top: 16px;
+    right: 35px;
+    min-height: 30px;
+    font-size: 11pt;
+}
+.igov-h-b .hu-i {
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    top: 1px;
+    right: 1px;
+    max-height: 32px;
+    min-height: 32px;
+    font-size: 13pt;
+    border-radius: 2px;
+    box-shadow:  0px 0px 2px 1px rgba(220, 220, 220, 0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 80em;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    background: #ffffff;
+}
+
+/**
+ Estilos de la barra lateral
+**/
+@media screen and (max-width:800px) {
+    .igov-m {
+        position: fixed;
+        padding-top: 75px;
+        padding-left: 2px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        min-width: 36px;
+        max-width: 36px;
+        /* box-shadow:  0px 0px 1px 1px rgba(180, 180, 180, 1); */
+        background-image:url('/img/leftpattern.png');
+        z-index: 13;
+        background-color: white;
+    }
+    
+    .igov-wa {
+        position: fixed;
+        top: 70px;
+        left: 0px;
+        right: 0px;
+        bottom: 50px;
+        box-shadow:  0px 0px 2px 1px rgba(220, 220, 220, 1);
+        background-color: #ffffff;
+        z-index: 0;
+        padding: 15px;
+        overflow:scroll;
+    }
+
+    .i-m-size {
+        padding: -2px;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1280px) {
+    .igov-m {
+        position: fixed;
+        padding-top: 75px;
+        padding-left: 2px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        min-width: 50px;
+        max-width: 50px;
+        box-shadow:  0px 0px 1px 1px rgba(180, 180, 180, 1);
+        background-image:url('/img/leftpattern.png');
+        z-index: 13;
+        background-color: white;
+    }
+    
+    .igov-wa {
+        position: fixed;
+        top: 70px;
+        left: 0px;
+        right: 0px;
+        bottom: 50px;
+        box-shadow:  0px 0px 2px 1px rgba(220, 220, 220, 1);
+        background-color: #ffffff;
+        z-index: 0;
+        padding: 15px;
+        overflow:scroll;
+    }
+
+    .i-m-size {
+        padding: -2px;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media screen and (min-width:1281px) {
+    .igov-m {
+        position: fixed;
+        padding-top: 75px;
+        padding-left: 2px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        min-width: 68px;
+        max-width: 68px;
+        box-shadow:  0px 0px 1px 1px rgba(180, 180, 180, 1);
+        background-image:url('/img/leftpattern.png');
+        z-index: 13;
+        background-color: white;
+    }
+
+    .igov-wa {
+        position: fixed;
+        top: 70px;
+        left: 0px;
+        right: 0px;
+        bottom: 50px;
+        box-shadow:  0px 0px 2px 1px rgba(220, 220, 220, 1);
+        background-color: #ffffff;
+        z-index: 0;
+        padding: 15px;
+        overflow:scroll;
+    }
+
+    .i-m-size {
+        padding: -2px;
+        width: 64px;
+        height: 64px;
+    }
+    
+}
+
+.i-m-agr {
+    background-image:url('/media/img/administracion_grupos_roles.png');
+    background-size: contain;
+}
+
+.i-m-agr:hover {
+    background-image:url('/media/img/administracion_grupos_roles_hover.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.i-m-au {
+    background-image:url('/media/img/administracion_usuarios.png');
+    background-size: contain;
+}
+
+.i-m-au:hover {
+    background-image:url('/media/img/administracion_usuarios_hover.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.i-m-cac {
+    background-image:url('/media/img/calendario_academico.png');
+    background-size: contain;
+}
+
+.i-m-cac:hover {
+    background-image:url('/media/img/calendario_academico_hover.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.i-m-cad {
+    background-image:url('/media/img/calendario_administrativo.png');
+    background-size: contain;
+}
+
+.i-m-cad:hover {
+    background-image:url('/media/img/calendario_administrativo_hover.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.i-m-cur {
+    background-image:url('/media/img/curso.png');
+    background-size: contain;
+}
+
+.i-m-cur:hover {
+    background-image:url('/media/img/curso_hover.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.i-m-enc {
+    background-image:url('/media/img/encuesta.png');
+    background-size: contain;
+}
+
+.i-m-enc:hover {
+    background-image:url('/media/img/encuestas_hover.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.i-m-exa {
+    background-image:url('/media/img/examenes.png');
+    background-size: contain;
+}
+
+.i-m-exa:hover {
+    background-image:url('/media/img/examenes_hover.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+/**
+ Estilos de la barra de comandos
+**/
+.igov-mc {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 800px;
+    min-height:50px;
+    max-height:50px;
+    box-shadow:  0px 0px 2px 1px rgba(220, 220, 220, 1);
+    background-color: rgba(250,250,250,1);
+    z-index: 10;
+}
+
+.igov-fa {
+    position: fixed;
+    right: 0px;
+    top: 70px;
+    bottom: 50px;
+    min-width: 300px;
+    box-shadow:  0px 0px 1px 1px rgba(220, 220, 220, 1);
+    background-color: rgba(250,250,250,1);
+    z-index: 3;
+}
+
+.igov-pa {
+    position: fixed;
+    right: 0px;
+    top: 70px;
+    bottom: 50px;
+    min-width: 400px;
+    box-shadow:  0px 0px 2px 1px rgba(220, 220, 220, 1);
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+/*Tool icon for academy*/
+
+.list-menu-academy .list-group-item{
+	padding: 5px 5px;
+}
+
+.tool-icon {
+	display:block;
+	padding: 30px;
+	background-position: center;
+}
+/*Home*/
+.tool-icon.home-icon, .active .tool-icon.home-icon:hover{
+	background: url("../images/home.png") no-repeat;
+}
+
+.tool-icon.home-icon:hover{
+	background: url("../images/home_hover.png") no-repeat;
+}
+/*Course*/
+.tool-icon.course-icon, .active .tool-icon.course-icon:hover{
+	background: url("../images/academy/curso.png") no-repeat;
+}
+
+.tool-icon.course-icon:hover{
+	background: url("../images/academy/curso_hover.png") no-repeat;
+}
+/**/
+.tool-icon.role-icon, .active .tool-icon.role-icon:hover{
+	background: url("../images/academy/administracion_grupos_roles.png") no-repeat;
+}
+
+.tool-icon.role-icon:hover{
+	background: url("../images/academy/administracion_grupos_roles_hover.png") no-repeat;
+}
+/**/
+.tool-icon.users-icon, .active .tool-icon.users-icon:hover{
+	background: url("../images/academy/administracion_usuarios.png") no-repeat;
+}
+
+.tool-icon.users-icon:hover{
+	background: url("../images/academy/administracion_usuarios_hover.png") no-repeat;
+}
+/**/
+.tool-icon.cal-academic-icon, .active .tool-icon.cal-academic-icon:hover{
+	background: url("../images/academy/calendario_academico.png") no-repeat;
+}
+
+.tool-icon.cal-academic-icon:hover{
+	background: url("../images/academy/calendario_academico_hover.png") no-repeat;
+}
+/**/
+.tool-icon.cal-admin-icon, .active .tool-icon.cal-admin-icon:hover{
+	background: url("../images/academy/calendario_administrativo.png") no-repeat;
+}
+
+.tool-icon.cal-admin-icon:hover{
+	background: url("../images/academy/calendario_administrativo_hover.png") no-repeat;
+}
+/**/
+.tool-icon.encuesta-icon, .active .tool-icon.encuesta-icon:hover{
+	background: url("../images/academy/encuesta.png") no-repeat;
+}
+
+.tool-icon.encuesta-icon:hover{
+	background: url("../images/academy/encuesta_hover.png") no-repeat;
+}
+/*examenes*/
+.tool-icon.examenes-icon, .active .tool-icon.examenes-icon:hover{
+	background: url("../images/academy/examenes.png") no-repeat;
+}
+
+.tool-icon.examenes-icon:hover{
+	background: url("../images/academy/examenes_hover.png") no-repeat;
+}
+/*indicadores*/
+.tool-icon.indicadores-icon, .active .tool-icon.indicadores-icon:hover{
+	background: url("../images/academy/indicadores.png") no-repeat;
+}
+
+.tool-icon.indicadores-icon:hover{
+	background: url("../images/academy/indicadores_hover.png") no-repeat;
+}
+/*mas*/
+.tool-icon.mas-icon, .active .tool-icon.mas-icon:hover{
+	background: url("../images/academy/mas.png") no-repeat;
+}
+
+.tool-icon.mas-icon:hover{
+	background: url("../images/academy/mas_hover.png") no-repeat;
+}
+/*menos*/
+.tool-icon.menos-icon, .active .tool-icon.menos-icon:hover{
+	background: url("../images/academy/menos.png") no-repeat;
+}
+
+.tool-icon.menos-icon:hover{
+	background: url("../images/academy/menos_hover.png") no-repeat;
+}
+/*modulo_base*/
+.tool-icon.modulo-base-icon, .active .tool-icon.modulo-base-icon:hover{
+	background: url("../images/academy/modulo_base.png") no-repeat;
+}
+
+.tool-icon.modulo-base-icon:hover{
+	background: url("../images/academy/modulo_base_hover.png") no-repeat;
+}
+/*recursos*/
+.tool-icon.recursos-icon, .active .tool-icon.recursos-icon:hover{
+	background: url("../images/academy/recursos.png") no-repeat;
+}
+
+.tool-icon.recursos-icon:hover{
+	background: url("../images/academy/recursos_hover.png") no-repeat;
+}
+/*reportes*/
+.tool-icon.reportes-icon, .active .tool-icon.reportes-icon:hover{
+	background: url("../images/academy/reportes.png") no-repeat;
+}
+
+.tool-icon.reportes-icon:hover{
+	background: url("../images/academy/reportes_hover.png") no-repeat;
+}
+/*seguimiento_academico*/
+.tool-icon.seguimiento-icon, .active .tool-icon.seguimiento-icon:hover{
+	background: url("../images/academy/seguimiento_academico.png") no-repeat;
+}
+
+.tool-icon.seguimiento-icon:hover{
+	background: url("../images/academy/seguimiento_academico_hover.png") no-repeat;
+}
+/*seguridad_auditoria*/
+.tool-icon.seguridad-icon, .active .tool-icon.seguridad-icon:hover{
+	background: url("../images/academy/seguridad_auditoria.png") no-repeat;
+}
+
+.tool-icon.seguridad-icon:hover{
+	background: url("../images/academy/seguridad_auditoria_hover.png") no-repeat;
+}
+/*valoracion*/
+.tool-icon.valoracion-icon, .active .tool-icon.valoracion-icon:hover{
+	background: url("../images/academy/valoracion.png") no-repeat;
+}
+
+.tool-icon.valoracion-icon:hover{
+	background: url("../images/academy/valoracion_hover.png") no-repeat;
+}

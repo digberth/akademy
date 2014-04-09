@@ -1,0 +1,29 @@
+@main("Inicio de sesion", null){
+	<style>
+	<!--
+		.igov-wa{
+			padding-top: 40px;
+			padding-bottom: 40px;
+			background-color: #eee;
+		}
+		.form-signin {
+			max-width: 330px;
+			padding: 15px;
+			margin: 0 auto;
+		}
+	-->
+	</style>
+	<div class="container">
+	@helper.form(routes.Application.index) {
+      <div class="form-signin" role="form" >
+        <h2 class="form-signin-heading">Inicio de sesion</h2>
+        <input type="email" class="form-control" placeholder="mail&#64;domain.com" required autofocus>
+        <input type="password" class="form-control" placeholder="password" required>
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Mantener sesion
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </div>
+     }
+     </div>
+}
