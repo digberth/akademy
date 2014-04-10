@@ -2,6 +2,15 @@
 @template("Instructores", user,"role-icon"){
 
 	<div class="row">
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="nclase" >Numero de Instructor</label>
+			    <p class="form-control-static" id="nclase">20140023</p>
+			  </div>
+		  </div>
+	</div>
+	
+	<div class="row">
 		 <div class="col-md-5">
 			  <div class="form-group">
 			    <label for="invitacion" >Nombres</label>
@@ -38,4 +47,40 @@
 			  </div>
 		  </div>
 	</div>	
+	
+	<div class="row">
+	
+	
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="sede" >Sede</label>
+			    <div class="row">
+			    <div class="col-xs-10">
+			    <select class="form-control" id="sede">
+		            <option value="SEAT" >Sede 1</option>
+		            <option value="AUDI" >Sede 2</option>
+		            <option value="VOLKSWAGEN" >Sede 3</option>
+		        </select>
+		        </div>
+		        </div>
+			  </div>
+		  </div>
+		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="Curso" >Curso</label>
+			    <div class="row">
+			    <div class="col-xs-8">
+			    <select class="form-control" id="Curso">
+		            <option value="SEAT" >Curso 1</option>
+		            <option value="AUDI" >Curso 2</option>
+		            <option value="VOLKSWAGEN" >Curso 3</option>
+		        </select>
+		        </div>
+		        </div>
+			  </div>
+		  </div>
+		  
+		  
+	</div>
 }
