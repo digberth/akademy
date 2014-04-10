@@ -41,36 +41,90 @@
 		  <div class="col-md-4">
 			  <div class="form-group">
 			    <label for="datetimepicker11" >Fecha inicio</label>
-			    <div id="datetimepicker1" class="input-group">
-				    <input data-format="yyyy-MM-dd" type="text" class="form-control" id="datetimepicker11"></input>
-				    <span class="input-group-addon glyphicon glyphicon-align-justify">
-				    </span>
-				  </div>
+			    <div class="input-group">
+				    <input data-format="yyyy-MM-dd" type="date" class="form-control" id="datetimepicker11" />
+				    <div class="input-group-btn">
+				    <button type="button" class="btn btn-default">
+				    	<span class="glyphicon glyphicon-calendar"></span>
+				    </button>
+				    </div>
+				  </div>	
 			  </div>
 		  </div>
 		  <div class="col-md-4">
 			  <div class="form-group">
-			    <label for="datetimepicker2" >Fecha cierre</label>
-			    <div id="datetimepicker2" class="input-append">
-				    <input data-format="yyyy-MM-dd" type="text"></input>
-				    <span class="add-on">
-				      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
-				      </i>
-				    </span>
-				  </div>
+			    <label for="datetimepicker22" >Fecha cierre</label>
+			    <div class="input-group">
+				    <input data-format="yyyy-MM-dd" type="date" class="form-control" id="datetimepicker22" />
+				    <div class="input-group-btn">
+				    <button type="button" class="btn btn-default">
+				    	<span class="glyphicon glyphicon-calendar"></span>
+				    </button>
+				    </div>
+				  </div>	
+			  </div>
+			  </div>
+	</div>
+	
+	<div class="row">
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="sede" >Sede/ubicacion</label>
+			    <select class="form-control" id="sede">
+		            <option value="SEAT" >Sede 1</option>
+		            <option value="AUDI" >Sede 2</option>
+		            <option value="VOLKSWAGEN" >Sede 3</option>
+		        </select>
+			  </div>
+		  </div>
+		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="Catering" >Catering</label>
+			    <div class="row">
+			    <div class="col-xs-12">
+			    <input type="text" class="form-control" id="Catering" placeholder="Catering" />
+			    </div>
+			    </div>
+			  </div>
+		  </div>
+		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="estatus" >Estatus de invitacion</label>
+			    <div class="row">
+			    <div class="col-xs-6">
+			    <select class="form-control input-sm" id="requiere">
+		            <option value="Si" >Abierta</option>
+		            <option value="No" >Cerrada</option>
+		        </select>
+		        </div>
+		        </div>
 			  </div>
 		  </div>
 	</div>
 	
-	 <script type="text/javascript">
-		  	  window.onload = function() {
-		  		$('#datetimepicker1').datetimepicker({
-			        pickTime: false
-			    });
-		  		$('#datetimepicker2').datetimepicker({
-				    pickTime: false
-				});
-			  }
-	</script>
+	<div class="row">
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="invitacion" >Semana de envio de invitacion</label>
+			    <div class="row">
+			    <div class="col-xs-6">
+			    <input type="text" class="form-control" id="invitacion" placeholder="Invitacion" />
+			    </div>
+			    </div>
+			  </div>
+		  </div>
 		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="nparticipante" >Numero de participantes</label>
+			    <div class="row">
+			    <div class="col-xs-8">
+			    <input type="text" class="form-control" id="nparticipante" placeholder="Numero de participantes" />
+			    </div>
+			    </div>
+			  </div>
+		  </div>
+	</div>
 }

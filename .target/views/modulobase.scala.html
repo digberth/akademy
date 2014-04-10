@@ -1,4 +1,143 @@
 @(message: String,user:models.User)
-@template("Modulo Base", user,"modulo-base-icon"){
-	<p>Modulo Base @message</p>
+@template("Espacios", user,"modulo-base-icon"){
+	
+	<div class="row">
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="instructor" >Instructor</label>
+			    <select class="form-control" id="instructor">
+		            <option value="SEAT" >Instructor 1</option>
+		            <option value="AUDI" >Instructor 2</option>
+		            <option value="VOLKSWAGEN" >Instructor 3</option>
+		        </select>
+			    
+			  </div>
+		  </div>
+		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="Marca" >Marca</label>
+			    <div class="row">
+			    <div class="col-xs-6">
+			    <select class="form-control" id="Marca">
+		            <option value="SEAT" >SEAT</option>
+		            <option value="AUDI" >AUDI</option>
+		            <option value="VOLKSWAGEN" >VOLKSWAGEN </option>
+		            <option value="PORSCHE" >PORSCHE </option>
+		        </select>
+		        </div>
+		        </div>
+			  </div>
+		  </div>
+		  
+		  
+	</div>
+	
+	<div class="row">
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="Escuela" >Escuela</label>
+			    <select class="form-control" id="Marca">
+		            <option value="SEAT" >Escuela 1</option>
+		            <option value="AUDI" >Escuela 2</option>
+		            <option value="VOLKSWAGEN" >Escuela 3 </option>
+		            <option value="PORSCHE" >Escuela 4 </option>
+		        </select>
+			  </div>
+		  </div>
+		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="Mes" >Mes</label>
+			    <div class="row">
+			    <div class="col-xs-10">
+			    <input type="text" class="form-control" id="Mes" placeholder="Mes" />
+			    </div>
+			    </div>
+			  </div>
+		  </div>
+		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="Semana" >Semana</label>
+			    <div class="row">
+			    <div class="col-xs-6">
+			    <input type="text" class="form-control" id="Semana" placeholder="Semana" />
+			    </div>
+			    </div>
+			    
+			  </div>
+		  </div>
+		  
+	</div>
+	
+	<div class="row">
+		 <div class="col-md-8">
+			  <div class="form-group">
+			    <label for="nombrec" >Nombre de curso</label>
+			    <input type="text" class="form-control" id="nombrec" placeholder="Nombre de curso" />
+			  </div>
+		  </div>
+		  
+	</div>
+	
+	<div class="row">
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="datetimepicker11" >Fecha inicio</label>
+			    <div class="input-group">
+				    <input data-format="yyyy-MM-dd" type="date" class="form-control" id="datetimepicker11" />
+				    <div class="input-group-btn">
+				    <button type="button" class="btn btn-default">
+				    	<span class="glyphicon glyphicon-calendar"></span>
+				    </button>
+				    </div>
+				  </div>	
+			  </div>
+		  </div>
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="datetimepicker22" >Fecha cierre</label>
+			    <div class="input-group">
+				    <input data-format="yyyy-MM-dd" type="date" class="form-control" id="datetimepicker22" />
+				    <div class="input-group-btn">
+				    <button type="button" class="btn btn-default">
+				    	<span class="glyphicon glyphicon-calendar"></span>
+				    </button>
+				    </div>
+				  </div>	
+			  </div>
+			  </div>
+		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="nparticipantes" ></label>
+			    
+			  </div>
+		  </div>
+	</div>
+	
+	<div class="row">
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="sede" >Sede</label>
+			    <select class="form-control" id="sede">
+		            <option value="SEAT" >Sede 1</option>
+		            <option value="AUDI" >Sede 2</option>
+		            <option value="VOLKSWAGEN" >Sede 3</option>
+		        </select>
+			  </div>
+		  </div>
+		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="nparticipante" >Numero de participantes</label>
+			    <div class="row">
+			    <div class="col-xs-8">
+			    <input type="text" class="form-control" id="nparticipante" placeholder="Numero de participantes" />
+			    </div>
+			    </div>
+			  </div>
+		  </div>
+	</div>
 }

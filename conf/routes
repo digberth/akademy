@@ -3,9 +3,9 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+GET     /                           controllers.Application.login()
 
-GET     /login                      controllers.Application.login()
+GET     /index                      controllers.Application.index()
 GET     /cursos                     controllers.Application.cursos()
 GET     /seguridad                  controllers.Application.seguridad()
 GET     /role                       controllers.Application.role()

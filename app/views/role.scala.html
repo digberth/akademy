@@ -1,4 +1,41 @@
 @(message: String,user:models.User)
-@template("Roles", user,"role-icon"){
-	<p>Roles @message</p>
+@template("Instructores", user,"role-icon"){
+
+	<div class="row">
+		 <div class="col-md-6">
+			  <div class="form-group">
+			    <label for="invitacion" >Nombres</label>
+			    <div class="row">
+			    <div class="col-xs-12">
+			    <input type="text" class="form-control" id="invitacion" placeholder="Nombres" />
+			    </div>
+			    </div>
+			  </div>
+		  </div>
+		  
+	</div>
+	
+	<div class="row">
+		 <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="invitacion1" ></label>
+			    <div class="row">
+			    <div class="col-xs-12">
+			    <input type="text" class="form-control" id="invitacion1" placeholder="Invitacion" />
+			    </div>
+			    </div>
+			  </div>
+		  </div>
+		  
+		  <div class="col-md-4">
+			  <div class="form-group">
+			    <label for="nparticipante" >Numero de participantes</label>
+			    <div class="row">
+			    <div class="col-xs-12">
+			    <input type="text" class="form-control" id="nparticipante" placeholder="Numero de participantes" />
+			    </div>
+			    </div>
+			  </div>
+		  </div>
+	</div>	
 }

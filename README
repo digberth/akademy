@@ -1,4 +1,15 @@
 This is your new Play application
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+This file will be packaged with your application, when using play framework.
+
+la version necesario para ejecutar es play 2.2.2
+
+
+para la ejecucion el proyecto descargar el zip de play framework clasico (no el activator), uan ves descargado
+descomprimir el el zip y colocar la rura del ejecutable de play en le path del sistema
+
+una vez hecho lo anterior, descargar el proyecto de github, descomprimir, mediante entorno de consola colocarse en la
+carpeta donde esta el proyecto descargado de github, ejecutar el comando "play run" y ejecutar en el navegador
+
+http://localhost:9000/
